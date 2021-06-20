@@ -93,7 +93,7 @@ actually be the returned value of a function! So you can just call a function as
 values (so don't store the tip values in separate variables first, but right in the new
 array) */
 
-const calcTip = (bill) => {
+/* const calcTip = (bill) => {
     if (bill >= 50 && bill <= 300) return bill * 0.15;
     else return bill * 0.2;
 };
@@ -106,4 +106,68 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(`tips: ${tips}`);
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(`totals: ${totals}`);
+console.log(`totals: ${totals}`); */
+
+// Introduction to Objects
+/* const deepak = {
+    firstName: "Deepak",
+    lastName: "Joy Jose",
+    age: new Date().getFullYear() - 1988,
+    friends: ["Michael", "Steve", "Peter"],
+};
+
+console.log(
+    `My name is ${deepak.firstName} ${deepak.lastName} and I am ${deepak.age} years old. My friends are: ${deepak.friends}`
+); */
+
+// const interestedIn = prompt(
+//     "What do you want to know about Deepak? [Firstname, Lastname, Age, Friends]"
+// );
+
+// let propertyName;
+
+// if (interestedIn.toLowerCase() === "firstname") propertyName = "firstName";
+// else if (interestedIn.toLowerCase() === "lastname") propertyName = "lastName";
+// else if (interestedIn.toLowerCase() === "age") propertyName = "age";
+// else if (interestedIn.toLowerCase() === "friends") propertyName = "friends";
+// else alert("Invalid property for Deepak!!!");
+
+// console.log(`propertyName: ${deepak[propertyName]}`);
+
+/* deepak.location = "Canada";
+deepak["git"] = "deejayjay";
+
+console.log(deepak);
+console.log(
+    `${deepak.firstName} has ${deepak.friends.length} friends, and his best friend is ${deepak.friends[0]}.`
+); */
+
+// Object Methods
+const deepak = {
+    firstName: "Deepak",
+    lastName: "Joy Jose",
+    birthYear: 1988,
+    job: "Student",
+    friends: ["Michael", "Steve", "Peter"],
+    hasDriversLicense: true,
+
+    calcAge: function () {
+        this.age = new Date().getFullYear() - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} year old ${
+            this.job
+        }, and he ${
+            this.hasDriversLicense ? "has" : "does not have"
+        } a driver's license.`;
+    },
+};
+
+console.log(deepak.calcAge());
+console.log(deepak.age);
+console.log(deepak.age);
+console.log(deepak.age);
+
+console.log(deepak.getSummary());

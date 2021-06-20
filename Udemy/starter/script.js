@@ -194,7 +194,7 @@ respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 tall. */
 
-const mark = {
+/* const mark = {
     fullName: "Mark Miller",
     mass: 78,
     height: 1.69,
@@ -227,4 +227,49 @@ else if (mark.BMI < john.BMI)
 else
     console.log(
         `Both ${mark.fullName} and ${john.fullName} have the same BMI!!!`
-    );
+    ); */
+
+// Iteration - For Loop
+/* for (let count = 1; count <= 10; count++) {
+    console.log(`Lifting weights repitition #${count} 🏋️‍♂️🏋️‍♂️🏋️‍♂️`);
+} */
+
+// Looping Arrays, Break and Continue
+const deepak = [
+    "Deepak",
+    "Joy Jose",
+    new Date().getFullYear() - 1988,
+    "Student",
+    ["Michael", "Steve", "Peter"],
+    true
+];
+
+const types = [];
+
+for (let i = 0; i < deepak.length; i++) {
+    console.log(deepak[i]);
+    // types[i] = typeof deepak[i];
+    types.push(typeof deepak[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(new Date().getFullYear() - years[i]);
+}
+
+console.log(ages);
+
+// Continue & Break
+for (let i = 0; i < deepak.length; i++) {
+    if (typeof deepak[i] !== "string") continue; // Log only string elements to the console
+    console.log(deepak[i]);
+}
+
+for (let i = 0; i < deepak.length; i++) {
+    if (typeof deepak[i] === "number") break; // Log only until the first element which is of type number
+    console.log(deepak[i]);
+}

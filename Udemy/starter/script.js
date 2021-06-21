@@ -343,7 +343,7 @@ length of the array (because that's the number of elements)
 
 4.3. Call the function with the 'totals' array */
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+/* const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
 
@@ -365,4 +365,4 @@ for (let i = 0; i < bills.length; i++) {
 }
 console.log(tips);
 console.log(totals);
-console.log(calcAverage(totals));
+console.log(calcAverage(totals)); */

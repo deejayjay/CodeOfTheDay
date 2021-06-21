@@ -235,7 +235,7 @@ else
 } */
 
 // Looping Arrays, Break and Continue
-const deepak = [
+/* const deepak = [
     "Deepak",
     "Joy Jose",
     new Date().getFullYear() - 1988,
@@ -272,4 +272,24 @@ for (let i = 0; i < deepak.length; i++) {
 for (let i = 0; i < deepak.length; i++) {
     if (typeof deepak[i] === "number") break; // Log only until the first element which is of type number
     console.log(deepak[i]);
+} */
+
+// Looping backwards and Nested Loops
+const deepak = [
+    "Deepak",
+    "Joy Jose",
+    new Date().getFullYear() - 1988,
+    "Student",
+    ["Michael", "Steve", "Peter"]
+];
+
+for (let i = deepak.length - 1; i >= 0; i--) {
+    console.log(deepak[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`Starting Exercise ${exercise}...`);
+    for (let repeat = 1; repeat < 6; repeat++) {
+        console.log(`Lifting weight repetition ${repeat} 🏋️‍♂️🏋️‍♀️🏋️‍♂️🏋️‍♀️`);
+    }
 }

@@ -1,0 +1,14 @@
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\bin\Debug\netstandard2.0\HPlusSports.deps.json
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\bin\Debug\netstandard2.0\HPlusSports.dll
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\bin\Debug\netstandard2.0\ref\HPlusSports.dll
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\bin\Debug\netstandard2.0\HPlusSports.pdb
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\obj\Debug\netstandard2.0\HPlusSports.AssemblyInfoInputs.cache
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\obj\Debug\netstandard2.0\HPlusSports.AssemblyInfo.cs
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\obj\Debug\netstandard2.0\HPlusSports.csproj.CoreCompileInputs.cache
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\obj\Debug\netstandard2.0\XamlC.stamp
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\obj\Debug\netstandard2.0\HPlusSports.dll
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\obj\Debug\netstandard2.0\ref\HPlusSports.dll
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\obj\Debug\netstandard2.0\HPlusSports.pdb
+E:\GH\CodeOfTheDay\LinkedInLearning\src\HPlusSports\HPlusSports\HPlusSports\obj\Debug\netstandard2.0\ProductDetail.xaml.g.cs

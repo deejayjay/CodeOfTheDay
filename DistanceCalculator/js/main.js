@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
 	const destLat = document.querySelector("#destinationLatitude");
 	const destLong = document.querySelector("#destinationLongitude");
 
-	document.querySelector("#btnMyLocation").addEventListener("click", e => {
+	document.querySelector("#btnMyLocation").addEventListener("click", (e) => {
 		e.preventDefault();
 		// Check if geolocation supported by the browser
 		if (!navigator.geolocation) {
@@ -13,36 +13,41 @@ window.addEventListener("load", () => {
 		} else {
 			navigator.geolocation.getCurrentPosition(
 				locationSuccess,
-				locationError
+				locationError,
+				{ enableHighAccuracy: true, timeout: 5000, maximumAge: 10000 }
 			);
 		}
 	});
 
-	document.querySelector("#formLocDetails").addEventListener("submit", e => {
-		e.preventDefault();
-		if (
-			!srcLat.value.trim() ||
-			!srcLong.value.trim() ||
-			!destLat.value.trim() ||
-			!destLong.value.trim()
-		) {
-			console.error("Please enter the source and destination details!!!");
-		} else {
-			console.log(
-				findDistance(
-					srcLat.value,
-					srcLong.value,
-					destLat.value,
-					destLong.value,
-					true
-				)
-			);
-		}
-	});
+	document
+		.querySelector("#formLocDetails")
+		.addEventListener("submit", (e) => {
+			e.preventDefault();
+			if (
+				!srcLat.value.trim() ||
+				!srcLong.value.trim() ||
+				!destLat.value.trim() ||
+				!destLong.value.trim()
+			) {
+				console.error(
+					"Please enter the source and destination details!!!"
+				);
+			} else {
+				console.log(
+					findDistance(
+						srcLat.value,
+						srcLong.value,
+						destLat.value,
+						destLong.value,
+						true
+					)
+				);
+			}
+		});
 
 	function locationSuccess(location) {
-		srcLat.value = location.coords.latitude;
-		srcLong.value = location.coords.longitude;
+		srcLat.value = location.coords.latitude.toFixed(5);
+		srcLong.value = location.coords.longitude.toFixed(5);
 	}
 
 	function locationError() {

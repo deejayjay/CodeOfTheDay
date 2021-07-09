@@ -12,6 +12,7 @@ window.addEventListener("load", () => {
 	// This function accepts the WaitTimes Information in JSON,
 	// then formats it and displays it in the web page
 	function DisplayWaitTimes(waitTimesInfo) {
+		console.log(waitTimesInfo);
 		const waitTimes = waitTimesInfo.WaitTimes;
 		let template = "";
 

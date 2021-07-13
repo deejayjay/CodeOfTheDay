@@ -66,12 +66,9 @@
 			<footer>
 				<section class="footer-container">
 					<!-- This header is added for semantic purposes and screen readers only. -->
-					<h2>Disclaimer</h2>
+					<h2 class="sr-only">Disclaimer</h2>
 					<p>
-						This page was built by
-						<a href="https://github.com/deejayjay/"
-							>Deepak Joy Jose</a
-						>
+						This page was built for testing purposes only.
 						&copy; 2021
 					</p>
 				</section>

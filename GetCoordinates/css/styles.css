@@ -4,8 +4,8 @@ body {
 }
 
 header {
-	background-color: #dc143c;
-	color: rgba(243, 243, 243, 0.75);
+	background-color: rgba(220, 20, 60, 0.85);
+	color: #1d1d1d;
 	box-shadow: 0 0 5px 5px grey;
 }
 
@@ -17,7 +17,12 @@ h1 {
 }
 
 h1 > a {
-	color: #f3f3f3;
+	color: #1d1d1d;
+}
+
+h1 > a:hover {
+	color: #1d1d1d;
+	text-decoration: none;
 }
 
 header p {
@@ -25,6 +30,7 @@ header p {
 	padding-bottom: 1rem;
 	margin: 0;
 	font-size: 1.25rem;
+	font-weight: bold;
 }
 
 .flex-container {
@@ -39,11 +45,11 @@ header p {
 }
 
 .btn-get-coordinates {
-	border: 2px solid #dc143c;
+	border: 2px solid #3c3c3c;
 	outline: none;
 	border-radius: 0.5rem;
 	padding: 0.625rem 1rem;
-	background-color: #dc143c;
+	background-color: #3c3c3c;
 	color: #f3f3f3;
 	font-weight: bold;
 	font-size: 1.25rem;
@@ -53,6 +59,7 @@ header p {
 	background-color: #cdcdcd;
 	cursor: pointer;
 	color: #dc143c;
+	border-color: #dc143c;
 }
 
 .latitude {
@@ -83,10 +90,10 @@ header p {
 }
 
 footer {
-	padding: 1rem 0.5rem 0.5rem;
+	padding: 2rem 0.5rem 1rem;
 	background-color: #cdcdcd;
-	border-top: 2px solid #dc143c;
-	color: #6e6e6e;
+	border-top: 2px solid rgba(220, 20, 60, 0.85);
+	color: #4c4c4c;
 }
 
 footer p {
@@ -95,7 +102,7 @@ footer p {
 }
 
 footer a {
-	color: #6e6e6e;
+	color: #3c3c3c;
 	text-decoration: underline;
 }
 
@@ -104,8 +111,21 @@ footer a:hover {
 	color: #6e6e6e;
 }
 
+/* Used to hide content from Screen Readers and Users */
 .hidden {
 	display: none;
+}
+
+/* Used to hide content from Users, but available to Screen Readers */
+.sr-only {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -136,5 +156,9 @@ footer a:hover {
 
 	.coordinates-container p:first-of-type {
 		margin-top: 0;
+	}
+
+	footer {
+		text-align: center;
 	}
 }

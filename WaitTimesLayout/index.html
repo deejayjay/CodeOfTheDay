@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="author"
+			content="Deepak Joy Jose | deejayjay@zoho.com | deejayjay on GitHub"
+		/>
+		<meta name="description" content="Add relevant description." />
+
+		<!-- jQuery Library - ** Uncomment only if jQuery is needed **
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    -->
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/reboot.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<title>Add a Semantic Title</title>
+	</head>
+	<body>
+		<header>
+			<h1>Wait Times</h1>
+		</header>
+		<main>
+			<section class="waittimes-maincontent">
+				<h2 class="sr-only">Location</h2>
+				<select name="ddlUserLocation" id="ddlUserLocation">
+					<option value="Calgary" selected>Calgary</option>
+					<option value="Edmonton">Edmonton</option>
+					<option value="RedDeer">RedDeer</option>
+					<option value="Lethbridge">Lethbridge</option>
+					<option value="MedicineHat">MedicineHat</option>
+				</select>
+				<div class="use-my-location">
+					<a href="#">Use My Current Location</a>
+				</div>
+				<div class="panel-refresh-time">
+					<div class="refresh-time">
+						<p>As of 9:43 AM</p>
+						<p>updated every 2 minutes**</p>
+					</div>
+					<div class="sort-by">
+						<select name="ddlSortBy" id="ddlSortBy">
+							<option value="Distance" selected>Distance</option>
+							<option value="Wait Times">Wait Times</option>
+						</select>
+					</div>
+				</div>
+				<div class="facility-types">
+					<div class="facility-type facility-emergency">
+						<input
+							type="checkbox"
+							name="chkEmergency"
+							id="chkEmergency"
+							value="Emergency"
+							checked
+						/>
+						<label for="chkEmergency">Emergency</label>
+					</div>
+					<div class="facility-type facility-urgent">
+						<input
+							type="checkbox"
+							name="chkUrgent"
+							id="chkUrgent"
+							checked
+						/>
+						<label for="chkUrgent">Urgent Care</label>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card card-emergency">
+						<div class="facility-card-header">
+							<div>02hr 15min</div>
+							<div>0.0km</div>
+						</div>
+						<div class="facility-card-contents">
+							<div class="facility-details">
+								<div class="facility-description">
+									<h2>Alberta Children's Hospital</h2>
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Nam pariatur enim et
+										at, velit temporibus.
+									</p>
+								</div>
+								<div class="facility-buttons">
+									<img src="img/right-arrow.png" alt="" />
+									<div
+										class="facility-category cat-emergency"
+									>
+										Emergency
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card card-emergency">
+						<div class="facility-card-header">
+							<div>02hr 15min</div>
+							<div>0.0km</div>
+						</div>
+						<div class="facility-card-contents">
+							<div class="facility-details">
+								<div class="facility-description">
+									<h2>Alberta Children's Hospital</h2>
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Nam pariatur enim et
+										at, velit temporibus.
+									</p>
+								</div>
+								<div class="facility-buttons">
+									<img src="img/right-arrow.png" alt="" />
+									<div
+										class="facility-category cat-emergency"
+									>
+										Emergency
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card card-emergency">
+						<div class="facility-card-header">
+							<div>02hr 15min</div>
+							<div>0.0km</div>
+						</div>
+						<div class="facility-card-contents">
+							<div class="facility-details">
+								<div class="facility-description">
+									<h2>Alberta Children's Hospital</h2>
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Nam pariatur enim et
+										at, velit temporibus.
+									</p>
+								</div>
+								<div class="facility-buttons">
+									<img src="img/right-arrow.png" alt="" />
+									<div
+										class="facility-category cat-emergency"
+									>
+										Emergency
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card card-urgent">
+						<div class="facility-card-header">
+							<div>02hr 15min</div>
+							<div>0.0km</div>
+						</div>
+						<div class="facility-card-contents">
+							<div class="facility-details">
+								<div class="facility-description">
+									<h2>Alberta Children's Hospital</h2>
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Nam pariatur enim et
+										at, velit temporibus.
+									</p>
+								</div>
+								<div class="facility-buttons">
+									<img src="img/right-arrow.png" alt="" />
+									<div class="facility-category cat-urgent">
+										Urgent Care
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card card-urgent">
+						<div class="facility-card-header">
+							<div>02hr 15min</div>
+							<div>0.0km</div>
+						</div>
+						<div class="facility-card-contents">
+							<div class="facility-details">
+								<div class="facility-description">
+									<h2>Alberta Children's Hospital</h2>
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Nam pariatur enim et
+										at, velit temporibus.
+									</p>
+								</div>
+								<div class="facility-buttons">
+									<img src="img/right-arrow.png" alt="" />
+									<div class="facility-category cat-urgent">
+										Urgent Care
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card card-urgent">
+						<div class="facility-card-header">
+							<div>02hr 15min</div>
+							<div>0.0km</div>
+						</div>
+						<div class="facility-card-contents">
+							<div class="facility-details">
+								<div class="facility-description">
+									<h2>Alberta Children's Hospital</h2>
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Nam pariatur enim et
+										at, velit temporibus.
+									</p>
+								</div>
+								<div class="facility-buttons">
+									<img src="img/right-arrow.png" alt="" />
+									<div class="facility-category cat-urgent">
+										Urgent Care
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<!-- Add content -->
+		</footer>
+		<!-- Custom JavaScript -->
+		<script src="js/main.js"></script>
+	</body>
+</html>

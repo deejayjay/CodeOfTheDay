@@ -48,9 +48,13 @@ C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\bin\
 C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\bin\roslyn\VBCSCompiler.exe
 C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\bin\roslyn\VBCSCompiler.exe.config
 C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\bin\Newtonsoft.Json.dll
+C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\bin\System.Net.Http.Formatting.dll
+C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\bin\Newtonsoft.Json.xml
+C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\bin\System.Net.Http.Formatting.xml
 C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\obj\Debug\GetCoordinatesApp.csprojAssemblyReference.cache
 C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\obj\Debug\GetCoordinatesApp.csproj.CoreCompileInputs.cache
 C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\obj\Debug\GetCoordinatesApp.csproj.CopyComplete
 C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\obj\Debug\GetCoordinatesApp.dll
 C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\obj\Debug\GetCoordinatesApp.pdb
+C:\GH\CodeOfTheDay\GetCoordinatesWebApp\GetCoordinatesApp\GetCoordinatesApp\obj\Debug\GetCoordinatesApp.csprojAssemblyReference.cache

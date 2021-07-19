@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
         // If geolocation is not supported by the browser or is not enabled,
         // the value of navigator.geolocation will be null
         if (!navigator.geolocation) {
-            console.error("The browser does not support geolocation!!!");
+            showErrorMessage("The browser does not support geolocation!!!");
         } else { // Geolocation is supported and enabled
             
             // 
@@ -44,6 +44,11 @@ window.addEventListener("load", function () {
 
     // Callback function to be called in case error occurs
     function locationError() {
-        console.error("Couldn't retrieve your location!!!");
+        showErrorMessage("Couldn't retrieve your location!!!");
+    }
+
+    function showErrorMessage(message) {
+        const lblMessage = document.getElementById("labelMessage");
+        lblMessage.textContent = message;
     }
 });

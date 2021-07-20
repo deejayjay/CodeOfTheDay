@@ -12,12 +12,15 @@ namespace GetCoordinatesApp
     public partial class WaitTimes : System.Web.UI.Page
     {
 
+        string locale = string.Empty;
+
         #region Event Handlers Methods
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                locale = Request.QueryString["locale"] ?? "en";
                 ddlUserLocation_SelectedIndexChanged(sender, e); // Reusing this method to load facilities for the default location - Calgary
             }
         }
@@ -92,7 +95,7 @@ namespace GetCoordinatesApp
             {
                 AHSResponse waitTimesResponse = new AHSResponse();
                 WaitTimesResponseHandler responseHandler = new WaitTimesResponseHandler();
-                waitTimesResponse = responseHandler.GetWaitTimesInfo();
+                waitTimesResponse = responseHandler.GetWaitTimesInfo(locale);
                 return waitTimesResponse;
             }
             catch (Exception ex)

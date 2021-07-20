@@ -19,12 +19,14 @@
     <title>Wait Times</title>
 </head>
 <body class="body-waittimes">
-    <header>
-        <h1>Wait Times</h1>
-    </header>
-    <main>
-        <section class="waittimes-maincontent">
-            <form id="form1" runat="server">
+    <form id="form1" runat="server">
+        <header>
+            <section class="header-container">
+                <h1>Wait Times</h1>
+            </section>
+        </header>
+        <main>
+            <section class="waittimes-maincontent">
                 <h2 class="sr-only">Location</h2>
                 <div>
                     <asp:Label runat="server" ID="labelMessage"></asp:Label>
@@ -73,9 +75,11 @@
                     </div>
                 </div>
                 <div class="card-container-flex">
-                    <div class="card-container emergency-cards"> <!-- Container for Emergency Cards -->
+                    <div class="card-container emergency-cards">
+                        <!-- Container for Emergency Cards -->
                         <asp:Repeater ID="rptWaitTimesEmergency" runat="server">
-                            <ItemTemplate>  <!-- Template for an Emergency Card -->
+                            <ItemTemplate>
+                                <!-- Template for an Emergency Card -->
                                 <div class="card card-emergency">
                                     <div class="facility-card-header">
                                         <div><%#Eval("WaitTime") %></div>
@@ -102,9 +106,11 @@
                             </ItemTemplate>
                         </asp:Repeater>
                     </div>
-                    <div class="card-container urgentcare-cards"> <!-- Container for Urgent Care Cards -->
+                    <div class="card-container urgentcare-cards">
+                        <!-- Container for Urgent Care Cards -->
                         <asp:Repeater ID="rptWaitTimesUrgent" runat="server">
-                            <ItemTemplate> <!-- Template for an Urgent Care Card -->
+                            <ItemTemplate>
+                                <!-- Template for an Urgent Care Card -->
                                 <div class="card card-urgent">
                                     <div class="facility-card-header">
                                         <div><%#Eval("WaitTime") %></div>
@@ -132,9 +138,19 @@
                     </div>
                 </div>
 
-            </form>
-        </section>
-    </main>
+            </section>
+        </main>
+        <footer>
+				<section class="footer-container">
+					<!-- This header is added for semantic purposes and screen readers only. -->
+					<h2 class="sr-only">Disclaimer</h2>
+					<p>
+						This page was built for testing purposes only.
+						&copy; 2021
+					</p>
+				</section>
+			</footer>
+    </form>
     <script>
         // Get reference to the appropriate HTML components
         const emergencyCards = document.querySelector(".emergency-cards");

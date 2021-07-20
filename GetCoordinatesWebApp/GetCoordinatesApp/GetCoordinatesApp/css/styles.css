@@ -1,6 +1,6 @@
 body {
     font-family: "Ubuntu", sans-serif;
-    background-color: #fefefe;
+    background-color: #f0f0f0;
 }
 
 header {
@@ -63,7 +63,7 @@ header p {
     }
 
 .latitude {
-    margin-top: 2rem;
+    
 }
 
 .latitude,
@@ -72,6 +72,7 @@ header p {
     background-color: #3c3c3c;
     border-radius: 0.5rem;
     color: #f3f3f3;
+    margin-top: 2rem;
 }
 
 .latitude-label,
@@ -117,7 +118,7 @@ footer {
 }
 
 body.body-waittimes {
-    background-color: #f1f1e8;
+    background-color: #f0f0f0;
     min-width: 320px;
 }
 
@@ -368,5 +369,41 @@ header {
 
     .card-container {
         width: 49%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .header-container,
+    .footer-container,
+    .content {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .waittimes-maincontent {
+        max-width: 1300px;
+        margin: 1.5rem auto;
+    }
+
+    .coordinates-container {
+        display: flex;
+        width: 98%;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+        .coordinates-container p {
+            width: 49%;
+            font-size: 2rem;
+        }
+
+    .latitude-label,
+    .longitude-label {
+        padding: 2rem;
+        width: 40%;
+    }
+
+    footer {
+        text-align: center;
     }
 }

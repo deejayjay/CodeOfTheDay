@@ -18,7 +18,7 @@ namespace GetCoordinatesApp.Handlers
         /// Retrieves the WaitTimes Info from the Wait Times Web API
         /// </summary>
         /// <returns><see cref="AHSResponse"/> object which contains the WaitTimes info.</returns>
-        public AHSResponse GetWaitTimesInfo()
+        public AHSResponse GetWaitTimesInfo(string locale)
         {
             try
             {
@@ -26,7 +26,7 @@ namespace GetCoordinatesApp.Handlers
                 {
                     webClient.BaseAddress = StaticItems.EndPoint; // Base URI for the requests made
                     webClient.Encoding = System.Text.Encoding.UTF8; // Important as avoiding specifying this can result in special characters being displayed in text of regular ones
-                    var json = webClient.DownloadString("waittimes/en"); // Relative path to the api web page
+                    var json = webClient.DownloadString($"waittimes/{locale}"); // Relative path to the api web page
                     var response = JsonConvert.DeserializeObject<AHSResponse>(json); // Deserialize the JSON to an object of type AHSResponse
                     return response;
                 }

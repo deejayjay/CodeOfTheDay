@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+}
+
+main {
+	margin: 0 auto;
+	width: 90%;
+}
+
+header {
+	padding: 2rem 0;
+	background-color: #3c3c3c;
+	color: rgb(5, 179, 179);
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+select {
+	margin-top: 3rem;
+	width: 90%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none; /* Remove default arrow */
+	padding: 0.5rem;
+	background: url("../img/arrow-down.png") 95% no-repeat #fff;
+}
+
+select::-ms-expand {
+	display: none; /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
+}
+
+#sortType {
+	width: 5rem;
+	font-size: 0.75rem;
+	padding: 0.25rem;
+	background: url("../img/triangular-arrow-down.png") 90% / 12% no-repeat #fff;
+}

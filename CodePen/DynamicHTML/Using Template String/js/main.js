@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
                                 </i>
                             </div>
                             <div class="column-delete">
-                                <i class="fas fa-trash-alt icon-delete" title="Delete"></i>
+                                <i class="fas fa-trash-alt icon-delete" title="Delete ${name}"></i>
                             </div>
                         </div>`;
 

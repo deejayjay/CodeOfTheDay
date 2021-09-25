@@ -13,7 +13,48 @@ window.addEventListener("load", () => {
     });
 
     // If the name is not empty or white-space, add a new row to the table
-    function AddTableRow(name) {}
+    function AddTableRow(name) {
+        // create DOM elements
+        const row = document.createElement("div");
+        const nameCol = document.createElement("div");
+        const hiCol = document.createElement("div");
+        const delCol = document.createElement("div");
+        const iconGreet = document.createElement("i");
+        const iconDelete = document.createElement("i");
+        const textName = document.createTextNode(name);
+
+        // Set classes and attributes
+        row.classList.add("row");
+        nameCol.classList.add("column-name");
+        hiCol.classList.add("column-hi");
+        delCol.classList.add("column-delete");
+        iconGreet.classList.add("fas", "fa-hand-paper", "icon-greet");
+        iconDelete.classList.add("fas", "fa-trash-alt", "icon-delete");
+        iconGreet.title = "Say hi to " + name;
+        iconDelete.title = "Delete " + name;
+
+        // Add click event handlers for iconGreet
+        iconGreet.addEventListener("click", () => {
+            displayMessage("Hi " + name);
+        });
+
+        // Add click event handlers for iconDelete
+        iconDelete.addEventListener("click", (e) => {
+            const rowToDelete = e.target.parentNode.parentNode;
+            rowToDelete.remove();
+        });
+
+        // Combine the DOM elements to create a table row
+        nameCol.appendChild(textName);
+        hiCol.appendChild(iconGreet);
+        delCol.appendChild(iconDelete);
+        row.appendChild(nameCol);
+        row.appendChild(hiCol);
+        row.appendChild(delCol);
+
+        // Now, add the newly created row to the .content <div>
+        document.body.querySelector(".content").append(row);
+    }
 
     // If the cros (X) is clicked, close the message modal window
     document.querySelector(".message > i").addEventListener("click", () => {
